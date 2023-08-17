@@ -27,28 +27,35 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.deepPurple,
-                Color.fromARGB(255, 144, 103, 236),
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: const Center(
-            child: Text(
-              "Hello World!",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 28,
-              ),
-            ),
-          ),
-        ),
+        body: GradientContainer(),
       ),
     ),
   );
+}
+
+class GradientContainer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.deepPurple,
+            Color.fromARGB(255, 144, 103, 236),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+      ),
+      child: const Center(
+        child: Text(
+          "Hello World!",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 28,
+          ),
+        ),
+      ),
+    );
+  }
 }
