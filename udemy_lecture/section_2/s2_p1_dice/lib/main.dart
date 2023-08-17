@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+//import 규칙 import 'package:프로젝트명/파일명'
+import 'package:s2_p1_dice/gradient_container.dart';
+
 //pubspec => 프로젝트 종속성 관리
 //매개변수 선엉 방식
 /*
@@ -25,37 +28,15 @@ ex) printSum(3, 5)
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        body: GradientContainer(),
+        body: GradientContainer(colors: [
+          Colors.white,
+          Colors.black,
+          Color.fromARGB(255, 89, 49, 162),
+        ],),
       ),
     ),
   );
 }
 
-class GradientContainer extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Colors.deepPurple,
-            Color.fromARGB(255, 144, 103, 236),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      child: const Center(
-        child: Text(
-          "Hello World!",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 28,
-          ),
-        ),
-      ),
-    );
-  }
-}
