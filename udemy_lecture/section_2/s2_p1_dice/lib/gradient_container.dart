@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:s2_p1_dice/styled_text.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key, required this.colors});
+
+  //명명된 생성자(Named Constructor)
+  GradientContainer.purple({super.key})
+      : colors = [Colors.deepPurple, Colors.purple];
 
   final List<Color> colors;
 
@@ -16,9 +19,9 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(
-        child: StyledText("Hello World!"),
-        ),
-      );
+      child: Center(
+        child: Image.asset('assets/images/dice-1.png', width: 200,),
+      ),
+    );
   }
 }
