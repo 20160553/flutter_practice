@@ -1,16 +1,13 @@
 # s2_p1_dice
 
-clone coding in https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/
+## 주사위 굴리기 굴리기 어플
 
-## Getting Started
+### 사용 기술
+1. UI 구성
+2. 이미지 assets 추가 및 적용
+3. State를 이용한 UI 갱신
 
-This project is a starting point for a Flutter application.
+### 최종화면
+<br />
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![주사위](https://github.com/20160553/flutter_practice/assets/53904156/9f2c2f86-c199-48fa-ba93-20ca8607dada)
