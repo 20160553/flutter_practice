@@ -28,9 +28,9 @@ ex) printSum(3, 5)
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        body: GradientContainer(colors: const [
+        body: GradientContainer(colors: [
           Colors.white,
           Colors.black,
           Color.fromARGB(255, 89, 49, 162),
